@@ -10,6 +10,7 @@ import AddListing from './AddListing/AddListing';
 import SearchByCategory from './search/[category]';
 import SearchByOptions from './search/SearchByOptions';
 import ListingDetail from './listingDetail/[id]/ListingDetail';
+import AboutUs from './components/ui/AboutUs';
 
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/profile',
     element: <Profile />
+  },
+  {
+    path: '/about',
+    element: <AboutUs />
   },
   {
     path: '/add-listing',
